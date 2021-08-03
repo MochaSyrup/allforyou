@@ -19,7 +19,7 @@ import poly.util.CmmUtil;
 
 
 
-//대현 깃 테스트
+//대현 깃 테스트 _완료
 @Controller
 public class MailController {
 
