@@ -44,11 +44,11 @@ public class ProjectsController {
 		return "/Projects/Test";
 	}
 	//회원가입 페이지
-	@RequestMapping(value = "Projects/Join")
+	@RequestMapping(value = "join")
 	public String Join() {
 		log.info("회원가입 페이지출력");
 
-		return "/Projects/Join";
+		return "/join";
 	}
 	@RequestMapping(value = "contact")
 	public String Main() {
