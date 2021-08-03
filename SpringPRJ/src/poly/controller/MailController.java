@@ -23,6 +23,7 @@ import poly.util.CmmUtil;
 @Controller
 public class MailController {
 
+	
 	private Logger log = Logger.getLogger(this.getClass());
 
 	@Resource(name = "MailService")
