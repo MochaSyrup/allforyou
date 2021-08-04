@@ -6,24 +6,24 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-// 작업 중 임다.
+import poly.service.ILoginService;
+
 @Controller
-public class UserController {
-
-
+public class LoginController {
 	
+	@Resource(name = "LoginService")
+	private ILoginService LoginService;
+	
+	//==================================================== 로그 찍기 위한 메소드
 	private Logger log = Logger.getLogger(this.getClass());
-
-	// ================================= 로그인 로직
+	
+	//================================== 로그인 페이지 진입
 	@RequestMapping(value = "user/login")
 	public String login() {
 		log.info("로그인 접속");
 		return "/user/login";
 	}
-	// ================================= 회원가입 로직
-	@RequestMapping(value = "user/join")
-	public String join() {
-		log.info("회원가입 접속");
-		return "/user/join";
-	}
+	
+	//================================== 로그인 처리 로직
+
 }
