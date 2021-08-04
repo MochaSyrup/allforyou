@@ -6,13 +6,11 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import poly.service.impl.UserService;
-// 작업 중
+// 작업 중 임다.
 @Controller
 public class UserController {
 
-	@Resource(name = "UserService")
-	private UserService UserService;
+
 	
 	private Logger log = Logger.getLogger(this.getClass());
 
