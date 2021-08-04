@@ -43,7 +43,7 @@ public class ProjectsController {
 		
 		return "/Projects/Test";
 	}
-	//회원가입 페이지
+	
 
 	@RequestMapping(value = "contact")
 	public String Main() {
@@ -87,13 +87,7 @@ public class ProjectsController {
 
 		return "/about";
 	}
-	//로그인 페이지
-	@RequestMapping(value = "login")
-	public String login() {
-		log.info("로그인");
-
-		return "/login";
-	}
+	
 	//비밀번호 찾기 페이지
 	@RequestMapping(value = "Projects/Forgot")
 	public String Forgot() {
@@ -102,70 +96,7 @@ public class ProjectsController {
 		return "/Projects/Forgot";
 	}
 	
-	//회원가입 
-	@RequestMapping(value = "Projects/insert")
-	@ResponseBody
-	public String insertinfo(HttpServletRequest request) throws Exception {
-		log.info("회원가입 시작");
-
-		String id = request.getParameter("id");
-		String password = request.getParameter("pwd");
-		String name = request.getParameter("name");
-
-		log.info(id);
-		log.info(password);
-		log.info(name);
-		ProjectsDTO uDTO = new ProjectsDTO();
-
-		uDTO.setUser_id(id);
-		uDTO.setUser_pwd(password);
-		uDTO.setUser_name(name);
-
-		int res = projectsService.insertinfo(uDTO);
-
-		String result = "";
-		if (res == 0) {
-			result = "fail";
-		} else if (res == 1) {
-			result = "succes";
-		} else {
-			result = "error";
-		}
-
-		return result;
-	}
 	
-	//로그인 
-	@RequestMapping(value = "Projects/index")
-	@ResponseBody
-	public String index(HttpServletRequest request) throws Exception {
-
-		String id = request.getParameter("id");
-		String password = request.getParameter("pwd");
-		log.info(id);
-		log.info(password);
-		log.info("로그인 시작");
-
-		ProjectsDTO mDTO = new ProjectsDTO();
-		mDTO.setUser_id(id);
-		mDTO.setUser_pwd(password);
-		log.info(mDTO.getUser_id());
-		log.info(mDTO.getUser_pwd());
-
-		int res = projectsService.Loginpage(mDTO);
-
-		String result = "";
-		if (res == 0) {
-			result = "로그인 성공하셨습니다 !";
-
-		} else if (res == 1) {
-			result = "삐빅 - 오류입니다 ID/PW를 다시 확인해주세요 !";
-		} else {
-			result = "ERROR : 3064";
-		}
-
-		return result;
-	}
 
 	//비밀번호 찾기
 	 @RequestMapping(value = "Projects/Search")

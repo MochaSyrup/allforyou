@@ -1,11 +1,14 @@
 package poly.controller;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import poly.dto.ProjectsDTO;
 import poly.service.ILoginService;
 
 @Controller
@@ -25,5 +28,34 @@ public class LoginController {
 	}
 	
 	//================================== 로그인 처리 로직
+	@RequestMapping(value = "Projects/index")
+	@ResponseBody
+	public String index(HttpServletRequest request) throws Exception {
 
+		String id = request.getParameter("id");
+		String password = request.getParameter("pwd");
+		log.info(id);
+		log.info(password);
+		log.info("로그인 시작");
+
+		ProjectsDTO mDTO = new ProjectsDTO();
+		mDTO.setUser_id(id);
+		mDTO.setUser_pwd(password);
+		log.info(mDTO.getUser_id());
+		log.info(mDTO.getUser_pwd());
+
+		int res = projectsService.Loginpage(mDTO);
+
+		String result = "";
+		if (res == 0) {
+			result = "/index";
+
+		} else if (res == 1) {
+			result = "삐빅 - 오류입니다 ID/PW를 다시 확인해주세요 !";
+		} else {
+			result = "ERROR : 3064";
+		}
+
+		return result;
+	}
 }
