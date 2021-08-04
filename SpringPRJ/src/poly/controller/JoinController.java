@@ -30,7 +30,7 @@ public class JoinController {
 	
 	// ================================== 회원가입 로직
 	//회원가입 
-		@RequestMapping(value = "users/join")
+		@RequestMapping(value = "user/user/join.do")
 		@ResponseBody
 		public String insertinfo(HttpServletRequest request) throws Exception {
 			log.info("회원가입 시작");

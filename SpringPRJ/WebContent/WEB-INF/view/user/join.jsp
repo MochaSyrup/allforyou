@@ -86,9 +86,8 @@
 								<h3>회원가입</h3>
 								<span class="bar-dark"></span> <span class="bar-primary"></span>
 							</div>
-
 							<form id="contact-form" class="row contact-form no-gutter"
-								action="/users/join.do" method="post">
+								action="/user/user/join.do" method="post">
 								<!-- <div class="col-xs-12 col-sm-6">
                                         <div class="input-field name">
                                             <span class="input-icon" id="name" ><i class="tf-profile-male"></i></span>
@@ -99,7 +98,7 @@
 									<div class="input-field email">
 										<span class="input-icon" id="email"><i
 											class="tf-envelope2"></i></span> <input type="email"
-											class="form-control" name="email"
+											class="form-control" name="id"
 											placeholder="사용하실 이메일을 입력해주세요">
 									</div>
 								</div>
@@ -108,7 +107,7 @@
 									<div class="input-field">
 										<span class="input-icon" id="subject"><i
 											class="tf-ion-android-unlock"></i></span> <input type="password"
-											class="form-control" name="subject"
+											class="form-control" name="pwd"
 											placeholder="사용하실 비밀번호를 입력해주세요">
 									</div>
 								</div>
@@ -119,7 +118,7 @@
 									<div class="input-field">
 										<span class="input-icon" id="subject"><i
 											class="tf-ion-person"></i></span> <input type=""
-											class="form-control" name="subject"
+											class="form-control" name="name"
 											placeholder="본인 이름을 입력해주세요">
 									</div>
 								</div>
@@ -222,8 +221,7 @@
 								<div class="col-xs-12 col-sm-12">
 									<div class="input-field">
 										<span class="btn-border email_length">
-											<button type="submit"
-												class="btn btn-primary btn-custom-border text-uppercase email_length">가입하기</button>
+											<button type="submit" class="btn btn-primary btn-custom-border text-uppercase email_length">가입하기</button>
 										</span>
 									</div>
 									<!--<div class="msg-success">Your Message was sent successfully</div> -->
