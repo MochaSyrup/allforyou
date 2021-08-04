@@ -1,11 +1,11 @@
 package poly.controller;
 //깃테스트 이진아
 
-<<<<<<< HEAD
+
 //git test_김학겸
-=======
+
 // 깃 테스트 주현
->>>>>>> 87074ea56885574099a7f8786d424280e7dd3ccd
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
@@ -26,19 +26,19 @@ public class JoinController {
 	private Logger log = Logger.getLogger(getClass());
 	
 	
-	// ================================= �쉶�썝媛��엯 �럹�씠吏�
+	// ================================= 회원가입 페이지
 	@RequestMapping(value = "user/join")
 	public String join() {
-		log.info("�쉶�썝媛��엯 �젒�냽");
+		log.info("로그인 페이지 출력");
 		return "/user/join";
 	}
 	
-	// ================================== �쉶�썝媛��엯 濡쒖쭅
-	//�쉶�썝媛��엯 
+	// ================================== 회원가입 로직
+	
 		@RequestMapping(value = "user/user/join.do")
 		@ResponseBody
 		public String insertinfo(HttpServletRequest request) throws Exception {
-			log.info("�쉶�썝媛��엯 �떆�옉");
+			log.info("로그인 로직 실행");
 
 			String id = request.getParameter("id");
 			String password = request.getParameter("pwd");
