@@ -124,7 +124,7 @@
 									</div>
 								</div>
 								<!-- ./col- -->
-								<select name="Allergy">
+								<select name="allergy">
 									<option value="">알레르기 선택</option>
 									<option value="갑각류">갑각류</option>
 									<option value="견과류">견과류</option>

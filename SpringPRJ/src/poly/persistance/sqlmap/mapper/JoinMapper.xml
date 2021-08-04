@@ -9,11 +9,17 @@
 		INSERT INTO USER_INFO(
 			USER_ID,
 			USER_PWD,
-			USER_NAME
+			USER_NAME,
+			USER_DATE,
+			USER_GENDER,
+			USER_ALLERGY
 		) values(
 			#{user_id},
 			#{user_pwd},
-			#{user_name}
+			#{user_name},
+			#{user_date},
+			#{user_gender},
+			#{user_allergy}
 		)
 	</insert>
 	
