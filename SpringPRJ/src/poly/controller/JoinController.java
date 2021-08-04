@@ -30,7 +30,7 @@ public class JoinController {
 	
 	// ================================== 회원가입 로직
 	//회원가입 
-		@RequestMapping(value = "Projects/insert")
+		@RequestMapping(value = "users/join")
 		@ResponseBody
 		public String insertinfo(HttpServletRequest request) throws Exception {
 			log.info("회원가입 시작");
@@ -48,7 +48,7 @@ public class JoinController {
 			uDTO.setUser_pwd(password);
 			uDTO.setUser_name(name);
 
-			int res = projectsService.insertinfo(uDTO);
+			int res = JoinService.insertinfo(uDTO);
 
 			String result = "";
 			if (res == 0) {

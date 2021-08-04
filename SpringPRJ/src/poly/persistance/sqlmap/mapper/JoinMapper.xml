@@ -3,8 +3,25 @@
 <!-- JAVA와 연결할 Mapper 파일 설정 -->
 <mapper namespace="poly.persistance.mapper.IJoinMapper">
 
+	<!-- ======== 회원가입 ======== -->
 	
+	<insert id = "insertinfo" parameterType="ProjectsDTO"> 
+		INSERT INTO USER_INFO(
+			USER_ID,
+			USER_PWD,
+			USER_NAME
+		) values(
+			#{user_id},
+			#{user_pwd},
+			#{user_name}
+		)
+	</insert>
 	
+	<!-- ======== 아이디 중복 체크 ======== -->
 	
+	<select id="checkID" parameterType="ProjectsDTO" resultType="ProjectsDTO">
+	SELECT * FROM USER_INFO
+	WHERE USER_ID = #{user_id}
+	</select>
 
 </mapper>

@@ -88,7 +88,7 @@
 							</div>
 
 							<form id="contact-form" class="row contact-form no-gutter"
-								action="#" method="post">
+								action="/users/join.do" method="post">
 								<!-- <div class="col-xs-12 col-sm-6">
                                         <div class="input-field name">
                                             <span class="input-icon" id="name" ><i class="tf-profile-male"></i></span>
