@@ -6,7 +6,7 @@ public interface IProjectsService {
 
 	int insertinfo(ProjectsDTO uDTO) throws Exception;
 
-	int Loginpage(ProjectsDTO mDTO) throws Exception;
+	
 
 	int New(ProjectsDTO wDTO) throws Exception;
 

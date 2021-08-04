@@ -87,7 +87,7 @@
                                             <input type="text" class="form-control"  placeholder="Enter your name">
                                         </div>
                                     </div> -- ./col- -->
-                                    <form action="/index.do">
+                                    <form action="/Projects/index.do">
                                     <div class="col-xs-12 col-sm-6 email_length">
                                         <div class="input-field email">
                                             <span class= "input-icon" id="email"><i class="tf-envelope2"></i></span>

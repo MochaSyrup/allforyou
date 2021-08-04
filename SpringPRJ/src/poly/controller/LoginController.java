@@ -29,7 +29,6 @@ public class LoginController {
 	
 	//================================== 로그인 처리 로직
 	@RequestMapping(value = "Projects/index")
-	@ResponseBody
 	public String index(HttpServletRequest request) throws Exception {
 
 		String id = request.getParameter("id");
@@ -44,7 +43,7 @@ public class LoginController {
 		log.info(mDTO.getUser_id());
 		log.info(mDTO.getUser_pwd());
 
-		int res = projectsService.Loginpage(mDTO);
+		int res = LoginService.Loginpage(mDTO);
 
 		String result = "";
 		if (res == 0) {

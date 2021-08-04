@@ -18,11 +18,11 @@
         CSS Files
         ================================= -->
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800" rel="stylesheet">
-        <link rel="stylesheet" href="resource/css/themefisher-fonts.min.css">
-        <link rel="stylesheet" href="resource/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="resource/css/bootstrap.min.css">
-        <link rel="stylesheet" href="resource/css/main.css">
-        <link id="color-changer" rel="stylesheet" href="resource/css/colors/color-0.css">
+        <link rel="stylesheet" href="/resource/css/themefisher-fonts.min.css">
+        <link rel="stylesheet" href="/resource/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/resource/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/resource/css/main.css">
+        <link id="color-changer" rel="stylesheet" href="/resource/css/colors/color-0.css">
     </head>
 
     <body>
@@ -61,7 +61,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
                                 <div class="page-title home text-center">
-                                    <img src="resource/img/phantom.png" alt="">
+                                    <img src="/resource/img/phantom.png" alt="">
                                     <p>A product designer from England, who focuses on interactive design &amp; A freelance designer focusing on typography &amp; clean interfaces. Also works in Google.</p>
                                 </div>
 
@@ -227,14 +227,14 @@
         <!-- ================================
         JavaScript Libraries
         ================================= -->
-        <script src="resource/js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="resource/js/vendor/bootstrap.min.js"></script>
+        <script src="/resource/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="/resource/js/vendor/bootstrap.min.js"></script>
         <!-- <script src="js/jquery.easing.min.js"></script> -->
-        <script src="resource/js/isotope.pkgd.min.js"></script>
-        <script src="resource/js/jquery.nicescroll.min.js"></script>
-        <script src="resource/js/owl.carousel.min.js"></script>
-        <script src="resource/js/jquery-validation.min.js"></script>
-        <script src="resource/js/form.min.js"></script>
-        <script src="resource/js/main.js"></script>
+        <script src="/resource/js/isotope.pkgd.min.js"></script>
+        <script src="/resource/js/jquery.nicescroll.min.js"></script>
+        <script src="/resource/js/owl.carousel.min.js"></script>
+        <script src="/resource/js/jquery-validation.min.js"></script>
+        <script src="/resource/js/form.min.js"></script>
+        <script src="/resource/js/main.js"></script>
     </body>
 </html>

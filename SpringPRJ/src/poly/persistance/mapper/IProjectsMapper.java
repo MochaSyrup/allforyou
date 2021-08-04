@@ -13,7 +13,7 @@ public interface IProjectsMapper {
 
 	ProjectsDTO checkID(ProjectsDTO mDTO) throws Exception;
 
-	ProjectsDTO checkLogin(ProjectsDTO mDTO) throws Exception;
+	
 
 	ProjectsDTO Search(ProjectsDTO oDTO) throws Exception;
 

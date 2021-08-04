@@ -45,22 +45,7 @@ public class ProjectsService implements IProjectsService{
 		return res;
 	}
 
-	@Override
-	public int Loginpage(ProjectsDTO mDTO) throws Exception {
-		int res = 0;
-		log.info("아이디 :" + mDTO.getUser_id());
-		log.info("비밀번호 :" + mDTO.getUser_pwd());
-		ProjectsDTO uDTO = new ProjectsDTO();
-		uDTO = ProjectsMapper.checkLogin(mDTO);
-		if(uDTO ==null) {
-			log.info("로그인시작");
-			res = 1;
-			log.info("없는 아이디 입니다");
-		} else {
-			log.info("로그인완료");
-		}
-		return res;
-	}
+	
 	
 	@Override
 	public int Search(ProjectsDTO oDTO) throws Exception {
