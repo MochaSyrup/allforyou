@@ -12,7 +12,7 @@
 <!-- mobile viwport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- fevicon -->
-<link rel="shortcut icon" type="image/x-icon" href="light/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/resource/favicon.ico">
 
 <!-- ================================
         CSS Files
@@ -20,11 +20,10 @@
 <link
 	href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800"
 	rel="stylesheet">
-<link rel="stylesheet" href="light/css/themefisher-fonts.min.css">
-<link rel="stylesheet" href="light/css/bootstrap.min.css">
-<link rel="stylesheet" href="light/css/main.css">
-<link id="color-changer" rel="stylesheet"
-	href="light/css/colors/color-0.css">
+<link rel="stylesheet" href="/resource/css/themefisher-fonts.min.css">
+<link rel="stylesheet" href="/resource/css/bootstrap.min.css">
+<link rel="stylesheet" href="/resource/css/main.css">
+<link id="color-changer" rel="stylesheet" href="/resource/css/colors/color-0.css">
 </head>
 
 <body>
@@ -67,7 +66,7 @@
 							class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
 							<div class="page-title text-center login_imgbiv">
 								<h2>
-									<img src="light/img/logorm.png" class="login_logo">
+									<img src="/resource/img/logorm.png" class="login_logo">
 									<!--<h2>All <span class="primary">for you</span><span class="title-bg">Welcome</span>-->
 								</h2>
 								<p>
@@ -262,14 +261,14 @@
 	<!-- ================================
         JavaScript Libraries
         ================================= -->
-	<script src="light/js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="light/js/vendor/bootstrap.min.js"></script>
-	<script src="light/js/jquery.easing.min.js"></script>
-	<script src="light/js/isotope.pkgd.min.js"></script>
-	<script src="light/js/jquery.nicescroll.min.js"></script>
-	<script src="light/js/owl.carousel.min.js"></script>
-	<script src="light/js/jquery-validation.min.js"></script>
-	<script src="light/js/form.min.js"></script>
-	<script src="light/js/main.js"></script>
+	<script src="/resource/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="/resource/js/vendor/bootstrap.min.js"></script>
+	<script src="/resource/js/jquery.easing.min.js"></script>
+	<script src="/resource/js/isotope.pkgd.min.js"></script>
+	<script src="/resource/js/jquery.nicescroll.min.js"></script>
+	<script src="/resource/js/owl.carousel.min.js"></script>
+	<script src="/resource/js/jquery-validation.min.js"></script>
+	<script src="/resource/js/form.min.js"></script>
+	<script src="/resource/js/main.js"></script>
 </body>
 </html>
