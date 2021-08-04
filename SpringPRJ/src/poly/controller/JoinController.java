@@ -38,13 +38,18 @@ public class JoinController {
 			String id = request.getParameter("id");
 			String password = request.getParameter("pwd");
 			String name = request.getParameter("name");
-			String date = request.getParameter("date");
+			String year = request.getParameter("year");
+			String month = request.getParameter("month");
+			String datey = request.getParameter("date");
 			String gender = request.getParameter("gender");
 			String allergy = request.getParameter("allergy");
-
+			String date = year+("-"+month)+("-"+datey);
 			log.info(id);
 			log.info(password);
 			log.info(name);
+			log.info(year);
+			log.info(month);
+			log.info(datey);
 			log.info(date);
 			log.info(gender);
 			log.info(allergy);
