@@ -64,8 +64,8 @@
                                 <div class="page-title text-center login_imgbiv">
                                     <h2><img src="/resource/img/logorm.png" class="login_logo">
                                         <!--<h2>All <span class="primary">for you</span><span class="title-bg">Welcome</span>--></h2>
-                                    <p>올포유는 전 세계 알러지 환자를 위한 실시간 알레르기 정보 확인 웹 사이트입니다.<br>
-                                    당신을 위한, 안전한 먹거리를 위해 ALL FOR YOU
+                                    <p>가입하실때 사용하신 이메일 주소를 입력하시면 이메일로 임시 비밀번호를 전송해 드립니다. <br>
+                                    	임시 비밀번호로 로그인 후 비밀번호를 변경해 주세요. 
                                     </p>
                                 </div>
                             </div>                            
@@ -75,7 +75,7 @@
 
                             <div class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2 login_box">
                                 <div class="section-title clear">
-                                    <h3>로그인</h3>
+                                    <h3>비밀번호 찾기</h3>
                                     <span class="bar-dark"></span>
                                     <span class="bar-primary"></span>
                                 </div>
@@ -92,25 +92,21 @@
                                         <div class="input-field email">
                                             <span class= "input-icon" id="email"><i class="tf-envelope2"></i></span>
                                             
-                                            <input type="email" class="form-control" name="id" placeholder="이메일을 입력해주세요"></input>
+                                            <input type="email" class="form-control" name="id" placeholder="회원가입시 사용한 이메일을 입력해주세요"></input>
                                         </div>
                                     </div> <!-- ./col- -->
-                                   <div class="col-xs-12 col-sm-12">
-                                        <div class="input-field">
-                                            <span class= "input-icon" id="subject"><i class="tf-ion-android-unlock"></i></span>
-                                            <input type="password" class="form-control" name="pwd" placeholder="비밀번호를 입력해주세요"></input>
-                                        </div>
-                                    </div> <!-- ./col- -->
+                                   
                                     <!--<div class="col-xs-12 col-sm-12">
                                         <div class="input-field message">
                                             <span class= "input-icon" ><i class="tf-pricetags"></i></span>
                                             <textarea name="message" id="message" class="form-control" placeholder="Write your message"></textarea>
                                         </div>
                                     </div>  ./col- -->
+                                    
                                     <div class="col-xs-12 col-sm-12 div_margin">
                                         <div class="input-field ">
                                             <span class="btn-border email_length">
-                                                <button type="submit" class="btn btn-primary btn-custom-border text-uppercase email_length">로그인</button>
+                                                <button type="submit" class="btn btn-primary btn-custom-border text-uppercase email_length">비밀번호 전송</button>
                                             </span>
                                         </div>
                                         </div>
@@ -119,23 +115,9 @@
                                         <!--<div class="msg-success">Your Message was sent successfully</div>-->
                                         <div class="msg-failed">뭔가 잘못되었어요, 다시 시도해 보세요</div>
                                     </div> <!-- ./col- -->
-                                    <form action="/user/join.do">
-                                    <div class="col-xs-12 col-sm-12">
-                                        <div class="input-field">
-                                            <span class="btn-border email_length">
-                                                <button type="submit" class="btn btn-primary btn-custom-border text-uppercase email_length">회원가입</button>
-                                            </span>
-                                        </div>
-                                        </div>
-                                        </form>
-                                        <!--<div class="msg-success">Your Message was sent successfully</div> -->
-                                        <div class="msg-failed">뭔가 잘못되었어요, 다시 시도해 보세요</div>
-                                    </div> 
+                                    
                                     <!-- ./col- -->
-                                    <div class="col-xs-12 col-sm-12">
-                                    <a href="Projects/Forgot.do">비밀번호를 잊으셨나요?</a>
-                                 <!-- /.row -->
-                            </div> <!-- /.col- -->
+                                   
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->
 
@@ -143,7 +125,7 @@
                         <div class="container">
                             <div class="flex flex-middle space-between">
                                 <span class="prev-page"><a href="testimonials.html" class="link">&larr; 이전</a></span>
-                                <span class="copyright hidden-xs">Copyright &copy; 2021 AII FOR YOU, All Rights Reserved.</span>
+                                <span class="copyright hidden-xs">Copyright &copy; 2021 ALL FOR YOU, All Rights Reserved.</span>
                             </div>
                         </div>
                         <!-- /.page-nav -->
