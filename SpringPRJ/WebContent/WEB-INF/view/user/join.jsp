@@ -86,9 +86,7 @@
 								<h3>회원가입</h3>
 								<span class="bar-dark"></span> <span class="bar-primary"></span>
 							</div>
-
-							<form id="contact-form" class="row contact-form no-gutter"
-								action="/users/join.do" method="post">
+							<form action="/user/user/join.do">
 								<!-- <div class="col-xs-12 col-sm-6">
                                         <div class="input-field name">
                                             <span class="input-icon" id="name" ><i class="tf-profile-male"></i></span>
@@ -99,7 +97,7 @@
 									<div class="input-field email">
 										<span class="input-icon" id="email"><i
 											class="tf-envelope2"></i></span> <input type="email"
-											class="form-control" name="email"
+											class="form-control" name="id"
 											placeholder="사용하실 이메일을 입력해주세요">
 									</div>
 								</div>
@@ -108,7 +106,7 @@
 									<div class="input-field">
 										<span class="input-icon" id="subject"><i
 											class="tf-ion-android-unlock"></i></span> <input type="password"
-											class="form-control" name="subject"
+											class="form-control" name="pwd"
 											placeholder="사용하실 비밀번호를 입력해주세요">
 									</div>
 								</div>
@@ -119,12 +117,12 @@
 									<div class="input-field">
 										<span class="input-icon" id="subject"><i
 											class="tf-ion-person"></i></span> <input type=""
-											class="form-control" name="subject"
+											class="form-control" name="name"
 											placeholder="본인 이름을 입력해주세요">
 									</div>
 								</div>
 								<!-- ./col- -->
-								<select name="Allergy">
+								<select name="allergy">
 									<option value="">알레르기 선택</option>
 									<option value="갑각류">갑각류</option>
 									<option value="견과류">견과류</option>
@@ -160,30 +158,30 @@
 									<option value="2003">2003</option>
 								</select> <select name="month">
 									<option value="월">월</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
+									<option value="01">1</option>
+									<option value="02">2</option>
+									<option value="03">3</option>
+									<option value="04">4</option>
+									<option value="05">5</option>
+									<option value="06">6</option>
+									<option value="07">7</option>
+									<option value="08">8</option>
+									<option value="09">9</option>
 									<option value="10">10</option>
 									<option value="11">11</option>
 									<option value="12">12</option>
 
 								</select> <select name="date">
 									<option value="일">일</option>
-									<option value="1">1</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
+									<option value="01">1</option>
+									<option value="02">2</option>
+									<option value="03">3</option>
+									<option value="04">4</option>
+									<option value="05">5</option>
+									<option value="06">6</option>
+									<option value="07">7</option>
+									<option value="08">8</option>
+									<option value="09">9</option>
 									<option value="10">10</option>
 									<option value="11">11</option>
 									<option value="12">12</option>
@@ -222,8 +220,7 @@
 								<div class="col-xs-12 col-sm-12">
 									<div class="input-field">
 										<span class="btn-border email_length">
-											<button type="submit"
-												class="btn btn-primary btn-custom-border text-uppercase email_length">가입하기</button>
+											<button type="submit" class="btn btn-primary btn-custom-border text-uppercase email_length">가입하기</button>
 										</span>
 									</div>
 									<!--<div class="msg-success">Your Message was sent successfully</div> -->

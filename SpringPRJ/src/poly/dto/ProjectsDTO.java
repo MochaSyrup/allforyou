@@ -9,7 +9,9 @@ public class ProjectsDTO {
 	private String tomail;
 	private String title;
 	private String contents;
-	
+	private String user_date;
+	private String user_gender;
+	private String user_allergy;
 	
 	
 	public String getTomail() {
@@ -17,6 +19,24 @@ public class ProjectsDTO {
 	}
 	public void setTomail(String tomail) {
 		this.tomail = tomail;
+	}
+	public String getUser_date() {
+		return user_date;
+	}
+	public void setUser_date(String user_date) {
+		this.user_date = user_date;
+	}
+	public String getUser_gender() {
+		return user_gender;
+	}
+	public void setUser_gender(String user_gender) {
+		this.user_gender = user_gender;
+	}
+	public String getUser_allergy() {
+		return user_allergy;
+	}
+	public void setUser_allergy(String user_allergy) {
+		this.user_allergy = user_allergy;
 	}
 	public String getTitle() {
 		return title;
