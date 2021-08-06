@@ -1,13 +1,11 @@
 package poly.controller;
+//깃테스트 이진아
 
 
-<<<<<<< HEAD
-=======
 //git test_김학겸
 
 // 깃 테스트 주현
 
->>>>>>> 41820b502be0158612aa6f5c96ce8f4d7c1b7631
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 

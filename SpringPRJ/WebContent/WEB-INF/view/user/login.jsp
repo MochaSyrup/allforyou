@@ -65,7 +65,7 @@
                                     <h2><img src="/resource/img/logorm.png" class="login_logo">
                                         <!--<h2>All <span class="primary">for you</span><span class="title-bg">Welcome</span>--></h2>
                                     <p>올포유는 전 세계 알러지 환자를 위한 실시간 알레르기 정보 확인 웹 사이트입니다.<br>
-                                    당신을 위한, 안전한 먹거리를 위해 ALL FOR YOU
+                                    당신을 위한, 안전한 먹거리를 위해 AII FOR YOU
                                     </p>
                                 </div>
                             </div>                            

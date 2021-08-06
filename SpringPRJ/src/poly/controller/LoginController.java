@@ -26,12 +26,6 @@ public class LoginController {
 		log.info("로그인 접속");
 		return "/user/login";
 	}
-	//------------------------------------- (임시) 비밀번호 찾기 페이지 전입 
-	@RequestMapping(value = "user/forgot")
-	public String forgot() {
-		log.info("비밀번호 찾기 접속");
-		return "/user/forgot";
-	}
 	
 	//================================== 로그인 처리 로직
 	@RequestMapping(value = "Projects/index")
