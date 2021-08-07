@@ -6,7 +6,7 @@
         <!-- meta charset -->
         <meta charset="utf-8">
         <!-- site title -->
-        <title>Phantom | Personal Resume Template</title>
+        <title>ALL FOR YOU</title>
         <!-- meta description -->
         <meta name="description" content="">
         <!-- mobile viwport meta -->
@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="/resource/css/owl.carousel.min.css">
         <link rel="stylesheet" href="/resource/css/bootstrap.min.css">
         <link rel="stylesheet" href="/resource/css/main.css">
+        <link rel="stylesheet" href="resource/css/style.css">
         <link id="color-changer" rel="stylesheet" href="/resource/css/colors/color-0.css">
     </head>
 
@@ -61,159 +62,180 @@
                         <div class="row">
                             <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
                                 <div class="page-title home text-center">
-                                    <img src="/resource/img/phantom.png" alt="">
-                                    <p>A product designer from England, who focuses on interactive design &amp; A freelance designer focusing on typography &amp; clean interfaces. Also works in Google.</p>
+                                    <h2>
+									<img src="/resource/img/logorm.png" class="login_logo">
+									<!--<h2>All <span class="primary">for you</span><span class="title-bg">Welcome</span>-->
+									</h2>
+									<p>
+										올포유는 전 세계 알러지 환자를 위한 실시간 알레르기 정보 확인 웹 사이트입니다.<br> 당신을 위한,
+										안전한 먹거리를 위해 ALL FOR YOU
+									</p>
                                 </div>
 
-                                <div class="hexagon-menu clear">
-                                    <div class="hexagon-item">
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <a href="welcome.do" class="hex-content">
-                                            <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="tf-dial"></i>
-                                                </span>
-                                                <span class="title">음식</span>
-                                            </span>
-                                            <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                        </a>
+                                <div class="hexagon-menu clear clear_div">
+                                <!--<div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
-                                    <div class="hexagon-item">
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <a href="about.do" class="hex-content">
-                                            <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="tf-profile-male"></i>
-                                                </span>
-                                                <span class="title">커뮤니티</span>
-                                            </span>
-                                            <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                        </a>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
-                                    <div class="hexagon-item">
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <a href="services.do" class="hex-content">
-                                            <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="tf-tools-2"></i>
-                                                </span>
-                                                <span class="title">Services</span>
+                                    <a href="welcome.html" class="hex-content">
+                                        <span class="hex-content-inner">
+                                            <span class="icon">
+                                                <i class="tf-dial"></i>
                                             </span>
-                                            <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                        </a>    
+                                            <span class="title">Welcome</span>
+                                        </span>
+                                        <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path>
+                                        </svg>
+                                    </a>
+                                </div>-->
+                                <!--<div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
-                                    <div class="hexagon-item">
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <a href="resume.do" class="hex-content">
-                                            <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="tf-tools"></i>
-                                                </span>
-                                                <span class="title">고객센터</span>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a href="about.html" class="hex-content">
+                                        <span class="hex-content-inner">
+                                            <span class="icon">
+                                                <i class="tf-profile-male"></i>
                                             </span>
-                                            <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                        </a>
+                                            <span class="title">About</span>
+                                        </span>
+                                        <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path>
+                                        </svg>
+                                    </a>
+                                </div>-->
+                                <div class="hexagon-item ">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
-                                    <div class="hexagon-item">
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <a href="works.do" class="hex-content">
-                                            <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="tf-briefcase2"></i>
-                                                </span>
-                                                <span class="title">마이페이지</span>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a href="services.do" class="hex-content">
+                                        <span class="hex-content-inner">
+                                            <span class="icon">
+                                                <i class=""><img src="/resource/img/allergy_icon.png" class="img_icon"></i>
                                             </span>
-                                            <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                        </a>
+                                            <span class="title">알레르기 검색</span>
+                                        </span>
+                                        <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item ">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
-                                    <div class="hexagon-item">
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <a href="testimonials.do" class="hex-content">
-                                            <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="tf-chat"></i>
-                                                </span>
-                                                <span class="title">알레르기검색</span>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a href="resume.do" class="hex-content">
+                                        <span class="hex-content-inner">
+                                            <span class="icon">
+                                                <i class=""><img src="/resource/img/food_icon.png" class="img_icon"></i>
                                             </span>
-                                            <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                        </a>
+                                            <span class="title">음식<br>게시판</span>
+                                        </span>
+                                        <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item div_hid">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
-                                    <div class="hexagon-item">
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div class="hex-item">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <a href="user/login.do" class="hex-content">
-                                            <span class="hex-content-inner">
-                                                <span class="icon">
-                                                    <i class="tf-envelope2"></i>
-                                                </span>
-                                                <span class="title">로그인 및 회원기입</span>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a href="/community/boardlist.do" class="hex-content">
+                                        <span class="hex-content-inner">
+                                            <span class="icon">
+                                                <i class=""><img src="/resource/img/people_icon.png" class="img_icon"></i>
                                             </span>
-                                            <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                                        </a>
+                                            <span class="title">커뮤니티 게시판</span>
+                                        </span>
+                                        <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
-                                </div> <!-- /.hexagon-menu -->
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a href="/user/login.do" class="hex-content">
+                                        <span class="hex-content-inner">
+                                            <span class="icon">
+                                                <i class=""><img src="/resource/img/person_icon.png" class="img_icon"></i>
+                                            </span>
+                                            <span class="title">마이페이지</span>
+                                        </span>
+                                        <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="hexagon-item">
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <div class="hex-item">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <a href="contact.do" class="hex-content">
+                                        <span class="hex-content-inner">
+                                            <span class="icon">
+                                                <i class=""><img src="/resource/img/service_icon.png" class="img_icon"></i>
+                                            </span>
+                                            <span class="title">고객센터</span>
+                                        </span>
+                                        <svg viewbox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div> <!-- /.hexagon-menu -->
+
 
                             </div> <!-- /.col-xs-12 -->
 
