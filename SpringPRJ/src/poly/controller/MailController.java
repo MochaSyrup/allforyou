@@ -30,54 +30,54 @@ public class MailController {
 	@Resource(name = "MailService")
 	private IMailService mailService;
 
-	/*
-	 * @Resource(name = "ProjectsService") private IProjectsService projectsService;
-	 * 
-	 * @RequestMapping(value = "mail/sendMail") private String
-	 * sendMail(HttpServletRequest request, HttpServletResponse response, ModelMap
-	 * model) throws Exception{
-	 * 
-	 * log.info(this.getClass().getName() + "mail.sendMail start!");
-	 * 
-	 * String toMail = CmmUtil.nvl(request.getParameter("toMail"));
-	 * log.info(toMail); //String title =
-	 * CmmUtil.nvl(request.getParameter("title")); //String contents =
-	 * CmmUtil.nvl(request.getParameter("contents")); String contents =
-	 * RandomStringUtils.randomAlphanumeric(10);
-	 * 
-	 * MailDTO pDTO = new MailDTO();
-	 * 
-	 * pDTO.setToMail(toMail); pDTO.setTitle("임시 비밀번호 입니다.");
-	 * pDTO.setContents(contents);
-	 * 
-	 * 
-	 * 
-	 * log.info("새로운 비밀번호 설정");
-	 * 
-	 * String id = request.getParameter("toMail"); log.info(contents);
-	 * 
-	 * ProjectsDTO wDTO = new ProjectsDTO(); wDTO.setUser_pwd(contents);
-	 * wDTO.setUser_id(id); log.info(wDTO.getUser_pwd());
-	 * 
-	 * int res1 = projectsService.New(wDTO);
-	 * 
-	 * if(res1 == 0) { log.info("비밀번호 변경 실패"); } else{
-	 * 
-	 * log.info("비밀번호 변 성공"); }
-	 * 
-	 * 
-	 * int res = mailService.doSendmail(pDTO);
-	 * 
-	 * if(res == 1) { log.info("메일발송 성공"); } else { log.info("메일 발송 실패"); }
-	 * 
-	 * 
-	 * model.addAttribute("res", String.valueOf(res));
-	 * 
-	 * log.info(this.getClass().getName() + "mail.sendMail end!");
-	 * 
-	 * return "/mail/sendMailResult";
-	 * 
-	 * }
-	 */
+	
+	  @Resource(name = "ProjectsService") private IProjectsService projectsService;
+	  
+	  @RequestMapping(value = "mail/sendMail") private String
+	  sendMail(HttpServletRequest request, HttpServletResponse response, ModelMap
+	  model) throws Exception{
+	  
+	  log.info(this.getClass().getName() + "mail.sendMail start!");
+	  
+	  String toMail = CmmUtil.nvl(request.getParameter("toMail"));
+	  log.info(toMail); //String title =
+	  CmmUtil.nvl(request.getParameter("title")); //String contents =
+	  CmmUtil.nvl(request.getParameter("contents")); String contents =
+	  RandomStringUtils.randomAlphanumeric(10);
+	  
+	  MailDTO pDTO = new MailDTO();
+	  
+	  pDTO.setToMail(toMail); pDTO.setTitle("임시 비밀번호 입니다.");
+	  pDTO.setContents(contents);
+	  
+	  
+	  
+	  log.info("새로운 비밀번호 설정");
+	  
+	  String id = request.getParameter("toMail"); log.info(contents);
+	  
+	  ProjectsDTO wDTO = new ProjectsDTO(); wDTO.setUser_pwd(contents);
+	  wDTO.setUser_id(id); log.info(wDTO.getUser_pwd());
+	  
+	  int res1 = projectsService.New(wDTO);
+	  
+	  if(res1 == 0) { log.info("비밀번호 변경 실패"); } else{
+	  
+	  log.info("비밀번호 변 성공"); }
+	  
+	  
+	  int res = mailService.doSendmail(pDTO);
+	  
+	  if(res == 1) { log.info("메일발송 성공"); } else { log.info("메일 발송 실패"); }
+	  
+	  
+	  model.addAttribute("res", String.valueOf(res));
+	  
+	  log.info(this.getClass().getName() + "mail.sendMail end!");
+	 
+	  return "/mail/sendMailResult";
+	  
+	  }
+	 
 	 
 }
