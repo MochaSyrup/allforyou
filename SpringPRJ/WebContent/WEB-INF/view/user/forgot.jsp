@@ -87,12 +87,12 @@
                                             <input type="text" class="form-control"  placeholder="Enter your name">
                                         </div>
                                     </div> -- ./col- -->
-                                    <form action="/Projects/index.do">
+                                    <form action="/user/Search.do">
                                     <div class="col-xs-12 col-sm-6 email_length">
                                         <div class="input-field email">
                                             <span class= "input-icon" id="email"><i class="tf-envelope2"></i></span>
                                             
-                                            <input type="email" class="form-control" name="id" placeholder="회원가입시 사용한 이메일을 입력해주세요"></input>
+                                            <input type="email" class="form-control" name="toMail" placeholder="회원가입시 사용한 이메일을 입력해주세요"></input>
                                         </div>
                                     </div> <!-- ./col- -->
                                    
