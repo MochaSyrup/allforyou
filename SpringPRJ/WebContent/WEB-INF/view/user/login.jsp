@@ -150,7 +150,7 @@
 									</div>
 								</div>
 							</form>
-							<a href="Projects/Forgot.do" class="a_styl">비밀번호를 잊으셨나요?</a>
+							<a href="/user/Forgot.do" class="a_styl">비밀번호를 잊으셨나요?</a>
 							<!--<div class="msg-success">Your Message was sent successfully</div> 
 							<div class="msg-failed">뭔가 잘못되었어요, 다시 시도해 보세요</div>-->
 						</div>

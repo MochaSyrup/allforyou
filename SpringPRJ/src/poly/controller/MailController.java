@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import poly.dto.MailDTO;
 import poly.dto.ProjectsDTO;
 import poly.service.IMailService;
+import poly.service.IPWCService;
 import poly.service.IProjectsService;
 import poly.util.CmmUtil;
 
@@ -30,8 +31,7 @@ public class MailController {
 	@Resource(name = "MailService")
 	private IMailService mailService;
 
-	
-	  @Resource(name = "ProjectsService") private IProjectsService projectsService;
+	  @Resource(name = "PWCService") private IPWCService PWCService;
 	  
 	  @RequestMapping(value = "mail/sendMail") private String
 	  sendMail(HttpServletRequest request, HttpServletResponse response, ModelMap
@@ -59,7 +59,7 @@ public class MailController {
 	  ProjectsDTO wDTO = new ProjectsDTO(); wDTO.setUser_pwd(contents);
 	  wDTO.setUser_id(id); log.info(wDTO.getUser_pwd());
 	  
-	  int res1 = projectsService.New(wDTO);
+	  int res1 = PWCService.New(wDTO);
 	  
 	  if(res1 == 0) { log.info("비밀번호 변경 실패"); } else{
 	  
