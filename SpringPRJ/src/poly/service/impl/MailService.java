@@ -26,13 +26,15 @@ import poly.util.CmmUtil;
 public class MailService implements IMailService{
 	private Logger log = Logger.getLogger(this.getClass());
 	
+	
+	// 해야할 일 : 경로설정 및 로그인 완료창 표시
 	@Resource(name="MailMapper")
 	private IMailMapper MailMapper;
 
 	
 	final String host = "smtp.naver.com";
-	final String user = "아디";
-	final String password = "비번";
+	final String user = "아이디";
+	final String password = "비밀번호";
 	
 	@Override
 	public int doSendmail(MailDTO pDTO) {
