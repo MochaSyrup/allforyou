@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>커뮤니티 게시판</title>
+<title>부트스트랩 테이블</title>
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -31,87 +31,22 @@
 		<h2 class="h2_seat">
 			<code class="h2_seat_color">커뮤니티 게시판</code>
 		</h2>
-		<table class="table table-striped">
-			<thead class="thead_color">
+		<table class="table table-striped table_reading">
+			<thead class="thead_color ">
 				<tr>
-					<th>글 번호</th>
-					<th>날짜</th>
-					<th>제목</th>
-					<th>작성자</th>
+					<th class="thead_th">제목</th>
+					<th class="thead_th">작성자</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td>1</td>
-					<td>4월6일</td>
-					<td>john@example.com</td>
-					<td>nn</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td colspan="2">내용이 들어가는 자리</td>
 				</tr>
 			</tbody>
 		</table>
 		<div class="div_button">
-		<button type="button" href="/community/boardwrite.do" class="btn button_FA6862 button_FA6862_seat">글쓰기</button>
+		<button type="button" class="btn button_FA6862 button_FA6862_seat">수정</button>
 		</div>
-	</div>
-	<br>
-	
-	<nav>
-		<ul class="pagination justify-content-center">
-			<li class="page-item"><a class="page-link a_color" href="">이전</a></li>
-			<li class="page-item"><a class="page-link a_color" href="">1</a></li>
-			<li class="page-item"><a class="page-link a_color" href="">2</a></li>
-			<li class="page-item"><a class="page-link a_color" href="">3</a></li>
-			<li class="page-item"><a class="page-link a_color" href="">다음</a></li>
-		</ul>
-	</nav>
 </body>
 </html>
 

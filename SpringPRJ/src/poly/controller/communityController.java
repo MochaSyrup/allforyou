@@ -22,4 +22,11 @@ public class communityController {
 		log.info("커뮤니티 게시판 글쓰기 페이지 출력");
 		return "/community/boardwrite";
 	}
+	
+	// ========================================= 커뮤니티 게시판 글 수정 및 삭제 페이지 출력
+	@RequestMapping(value="community/boardsee")
+	public String boardsee() {
+		log.info("커뮤니티 게시판 수정 및 삭제 페이지 출력");
+		return "/community/boardsee";
+	}
 }
