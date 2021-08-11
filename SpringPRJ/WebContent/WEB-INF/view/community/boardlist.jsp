@@ -1,7 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="static poly.util.CmmUtil.nvl"%>
+<%@ page import="java.util.List"%>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="poly.dto.ProjectsDTO"%>
+
 <!DOCTYPE html>
 <html lang="en">
+<%
+	List<ProjectsDTO> rList = (List<ProjectsDTO>) request.getAttribute("rList");
+%>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +34,9 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<div class="container">
-		<h2><img src="/resource/img/logo.png" class="img_size2"
-		alt="올포유 로고"></h2>
+		<h2>
+			<img src="/resource/img/logo.png" class="img_size2" alt="올포유 로고">
+		</h2>
 		<h2 class="h2_seat">
 			<code class="h2_seat_color">커뮤니티 게시판</code>
 		</h2>
@@ -35,74 +44,38 @@
 			<thead class="thead_color">
 				<tr>
 					<th>글 번호</th>
-					<th>날짜</th>
 					<th>제목</th>
 					<th>작성자</th>
+					<th>날짜</th>
 				</tr>
 			</thead>
 			<tbody>
+				<%
+					for (ProjectsDTO p : rList) {
+				%>
 				<tr>
-					<td>1</td>
-					<td>4월6일</td>
-					<td>john@example.com</td>
-					<td>nn</td>
+				
+					<td><%=p.getBoard_seq()%></td>
+					<td><%=p.getBoard_title()%></td>
+					<td><%=p.getBoard_writer()%></td>
+					<td><%=p.getBoard_regdate()%></td>
 				</tr>
-				<tr>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+
+				<%
+					}
+				%>
 			</tbody>
 		</table>
+
 		<div class="div_button">
-		<button type="button" href="/community/boardwrite.do" class="btn button_FA6862 button_FA6862_seat">글쓰기</button>
+			<button type="button"
+				onclick="location.href='/community/boardwrite.do' "
+				class="btn button_FA6862 button_FA6862_seat">글쓰기</button>
 		</div>
+
 	</div>
 	<br>
-	
+
 	<nav>
 		<ul class="pagination justify-content-center">
 			<li class="page-item"><a class="page-link a_color" href="">이전</a></li>
