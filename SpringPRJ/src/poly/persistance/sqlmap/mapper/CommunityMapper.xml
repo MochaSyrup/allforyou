@@ -4,8 +4,9 @@
 <mapper namespace="poly.persistance.mapper.ICommunityMapper">
 
 	<!-- ======== 게시판작성 ======== -->
+	
 	<insert id = "insertCommunity" parameterType="ProjectsDTO"> 
-		INSERT INTO COMMUNITY_INFO(z
+		INSERT INTO COMMUNITY_INFO(
 			BOARD_TITLE,
 			BOARD_WRITER,
 			BOARD_CONTENTS
@@ -16,14 +17,8 @@
 		)
 	</insert>
 	
-	<!-- ==========  게시판 조회  ============ -->
 	<select id = "getBoardList" parameterType="ProjectsDTO" resultType="ProjectsDTO">
 	SELECT BOARD_SEQ, BOARD_TITLE, BOARD_WRITER, BOARD_CONTENTS, BOARD_REGDATE FROM COMMUNITY_INFO
-	</select>
-
-	<!-- =========== 게시판 삭제 =========== -->
-	<select id = "" parameterType="" resultType="">
-	SELECT * FROM BOARD WHERE BOARD_SEQ = ();
 	</select>
 
 
