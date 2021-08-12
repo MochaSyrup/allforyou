@@ -7,45 +7,13 @@ public class ProjectsDTO {
 	private String user_pwd;
 	private String user_name;
 	private String tomail;
+	private String title;
+	private String contents;
 	private String user_date;
 	private String user_gender;
 	private String user_allergy;
-	private String board_title;
-	private String board_writer;
-	private String board_contents;
-	private String board_seq;
-	private String board_regdate;
 	
-	public String getBoard_seq() {
-		return board_seq;
-	}
-	public void setBoard_seq(String board_seq) {
-		this.board_seq = board_seq;
-	}
-	public String getBoard_regdate() {
-		return board_regdate;
-	}
-	public void setBoard_regdate(String board_regdate) {
-		this.board_regdate = board_regdate;
-	}
-	public String getBoard_title() {
-		return board_title;
-	}
-	public void setBoard_title(String board_title) {
-		this.board_title = board_title;
-	}
-	public String getBoard_writer() {
-		return board_writer;
-	}
-	public void setBoard_writer(String board_writer) {
-		this.board_writer = board_writer;
-	}
-	public String getBoard_contents() {
-		return board_contents;
-	}
-	public void setBoard_contents(String board_contents) {
-		this.board_contents = board_contents;
-	}
+	
 	public String getTomail() {
 		return tomail;
 	}
@@ -70,6 +38,18 @@ public class ProjectsDTO {
 	public void setUser_allergy(String user_allergy) {
 		this.user_allergy = user_allergy;
 	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getContents() {
+		return contents;
+	}
+	public void setContents(String contents) {
+		this.contents = contents;
+	}
 	public String getUser_pwd() {
 		return user_pwd;
 	}
@@ -89,8 +69,8 @@ public class ProjectsDTO {
 	public void setUser_id(String user_id) {
 		this.user_id = user_id;
 	}
-
-
+	
+	
 	
 	
 }

@@ -53,12 +53,12 @@ body {
 			<h2 align="center">게시글 작성</h2>
 
 			<form name="form" id="form" role="form" method="post"
-				action="${pageContext.request.contextPath}/community/boardwrite/logic.do">
+				action="${pageContext.request.contextPath}/community/boardlist.do">
 
 				<div class="mb-3">
 
 					<label for="title">제목</label> <input type="text"
-						class="form-control" name="BOARD_TITLE" id="title"
+						class="form-control" name="title" id="title"
 						placeholder="제목을 입력해 주세요">
 
 				</div>
@@ -68,7 +68,7 @@ body {
 				<div class="mb-3">
 
 					<label for="reg_id">작성자</label> <input type="text"
-						class="form-control" name="BOARD_WRITER" id="reg_id"
+						class="form-control" name="reg_id" id="reg_id"
 						placeholder="이름을 입력해 주세요">
 
 				</div>
@@ -79,7 +79,7 @@ body {
 
 					<label for="content">내용</label>
 
-					<textarea class="form-control" rows="5" name="BOARD_CONTENTS" id="content"
+					<textarea class="form-control" rows="5" name="content" id="content"
 						placeholder="내용을 입력해 주세요"></textarea>
 
 				</div>
