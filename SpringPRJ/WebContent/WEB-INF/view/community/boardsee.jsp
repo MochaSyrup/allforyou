@@ -46,6 +46,7 @@
 		</table>
 		<div class="div_button">
 		<button type="button" class="btn button_FA6862 button_FA6862_seat">수정</button>
+		<button type="button" class="btn button_FA6862 button_FA6862_seat">삭제</button>
 		</div>
 </body>
 </html>
