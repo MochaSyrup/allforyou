@@ -29,7 +29,7 @@ public class LogoutController {
 		String msg = "";
 		String url = "";
 		
-		int res = LoginService.logout(accessToken);
+		int res = LoginService.logout(accessToken); //엑세스 토큰값 뭐로 받아올지 아직 모르겠다.
 		
 		if (res==1) {
 			log.info("res : " + res); // 1이면 성공
