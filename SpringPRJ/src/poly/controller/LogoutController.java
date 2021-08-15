@@ -22,7 +22,7 @@ public class LogoutController {
 	private Logger log = Logger.getLogger(this.getClass());
 	
 	@RequestMapping(value="user/Logout.do")
-	public String logout(HttpSession session, Model model) throws Exception{
+	public String logout(HttpSession session, Model model) throws Exception{       //session, model 사용
 		
 		log.info(this.getClass() + "user/Logout start !! ");
 		
