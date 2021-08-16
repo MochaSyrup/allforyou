@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import poly.service.ILoginService;
 
 // 21.08.13 : 미완 엑세스 토큰 활용법 잘 모름 , 세션 값 어떻게 너어야 하는지 잘 모름, 월요일에 배울 에정
+// 21. 08. 16 : 내일로 미뤄짐 코드 확인 후 종료 
 
 @Controller
 public class LogoutController {
