@@ -45,15 +45,74 @@ public class CommunityService implements ICommunityService {
 	public List<ProjectsDTO> getBoardList() throws Exception {
 		List<ProjectsDTO> rlist = new ArrayList<>();
 		
-		rlist=CommunityMapper.getBoardList();
+		rlist = CommunityMapper.getBoardList();
+		
 		if(rlist==null) {
-			List<ProjectsDTO> list = new ArrayList<>();
-			log.info("rlist==null");
+			//rlist가 null 일 경우 오류 방지를 위해 강제로 메모리에 LIST 를 올림 
+			rlist = new ArrayList<>();
+			log.info("rlist == null");
 		}
 		else {
 			log.info("success");
 		}
 		
 		return rlist;
+	}
+	
+	@Override
+	public ProjectsDTO getBoard(ProjectsDTO rDTO) throws Exception {
+		
+		ProjectsDTO pDTO = new ProjectsDTO();
+		pDTO = CommunityMapper.getBoard(rDTO);
+		
+		if(pDTO==null) {
+			pDTO = new ProjectsDTO();
+			log.info("pDTO == null");
+		}
+		else {
+			log.info("게시판 상세 불러오기 성공");
+		}
+		
+		return pDTO;
+	}
+	
+	@Override
+	public int updateCommunity(ProjectsDTO uDTO) throws Exception {
+		int res = 0;
+		
+		if(uDTO ==null) {
+			log.info("게시글 수정 실패");
+			ProjectsDTO zDTO = new ProjectsDTO();
+			log.info("DTO에 값이 없어 메모리에 강제로 올렸습니다.");
+			
+		} else {
+			log.info("게시글 수정 로직 작동");
+			CommunityMapper.updateCommunity(uDTO);
+			res = 1;
+			log.info("게시글 수정 완료");
+			
+			
+		}
+		return res;
+	}
+	
+	@Override
+	public int deleteCommunity(ProjectsDTO uDTO) throws Exception {
+		int res = 0;
+		
+		if(uDTO ==null) {
+			log.info("게시글 삭제 실패");
+			ProjectsDTO zDTO = new ProjectsDTO();
+			log.info("DTO에 값이 없어 메모리에 강제로 올렸습니다.");
+			
+		} else {
+			log.info("게시글 삭제 로직 작동");
+			CommunityMapper.deleteCommunity(uDTO);
+			res = 1;
+			log.info("게시글 삭제 완료");
+			
+			
+		}
+		return res;
 	}
 }

@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="poly.dto.ProjectsDTO"%>	
 <!DOCTYPE html>
-<html>
-<% String user_name = (String)session.getAttribute("name"); 
-   String user_id = (String)session.getAttribute("id"); 	
+
+<%
+	ProjectsDTO pDTO = (ProjectsDTO)request.getAttribute("rDTO");
 %>
+
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -50,13 +53,13 @@ body {
 			<h2 align="center">게시글 작성</h2>
 
 			<form name="form" id="form" role="form" method="post"
-				action="${pageContext.request.contextPath}/community/boardwrite/logic.do">
+				action="${pageContext.request.contextPath}/community/boardupdate/logic.do?number=<%=pDTO.getBoard_seq()%>">
 
 				<div class="mb-3">
 
 					<label for="title">제목</label> <input type="text"
 						class="form-control" name="BOARD_TITLE" id="title"
-						placeholder="제목을 입력해 주세요">
+					value='<%=pDTO.getBoard_title()%>'>
 
 				</div>
 
@@ -66,9 +69,7 @@ body {
 
 					<label for="reg_id">작성자</label> <input type="text"
 						class="form-control" name="BOARD_WRITER" id="reg_id"
-						value=<%=user_name%> readonly>
-						
-						<input type ="hidden" value=<%=user_id%> name="id">
+					value='<%=pDTO.getBoard_writer()%>' readonly>
 
 				</div>
 
@@ -78,8 +79,7 @@ body {
 
 					<label for="content">내용</label>
 
-					<textarea class="form-control" rows="5" name="BOARD_CONTENTS" id="content"
-						placeholder="내용을 입력해 주세요"></textarea>
+					<textarea class="form-control" rows="5" name="BOARD_CONTENTS" id="content"><%=pDTO.getBoard_contents()%></textarea>
 
 				</div>
 
@@ -88,7 +88,7 @@ body {
 
 			<div>
 
-				<button type="button" href="../boardlist.do" class="btn btn-sm btn-primary button_color" id="btnSave">등록하기</button>
+				<button type="button" class="btn btn-sm btn-primary button_color" id="btnSave">등록하기</button>
 				<button type="button" class="btn btn-sm btn-primary button_color" id="btnList">취소</button>
 
 			</div>

@@ -1,6 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="poly.dto.ProjectsDTO"%>
 <!DOCTYPE html>
+
+<%
+	ProjectsDTO pDTO = (ProjectsDTO)request.getAttribute("rDTO");
+	String user_id = (String)session.getAttribute("id");
+%>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -34,18 +41,23 @@
 		<table class="table table-striped table_reading">
 			<thead class="thead_color ">
 				<tr>
-					<th class="thead_th">제목</th>
-					<th class="thead_th">작성자</th>
+					<th class="thead_th">제목&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%=pDTO.getBoard_title()%></th>
+					<th class="thead_th">작성자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <%=pDTO.getBoard_writer()%></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td colspan="2">내용이 들어가는 자리</td>
+					<td colspan="2"><%=pDTO.getBoard_contents()%></td>
 				</tr>
 			</tbody>
 		</table>
 		<div class="div_button">
-		<button type="button" class="btn button_FA6862 button_FA6862_seat">수정</button>
+		
+		<% if(user_id.equals(pDTO.getUser_id())) {%>
+		<button type="button" class="btn button_FA6862 button_FA6862_seat" onclick="location.href='/community/boardupdate.do?number=<%=pDTO.getBoard_seq()%>'">수정</button>
+		<button type="button" class="btn button_FA6862 button_FA6862_seat" onclick="location.href='/community/boarddelete.do?number=<%=pDTO.getBoard_seq()%>'">삭제</button>
+		<%} %>
+		
 		</div>
 </body>
 </html>

@@ -199,7 +199,7 @@
                                         <div></div>
                                         <div></div>
                                     </div>
-                                    <a href="/user/login.do" class="hex-content">
+                                    <a href="/mypage.do" class="hex-content">
                                         <span class="hex-content-inner">
                                             <span class="icon">
                                                 <i class=""><img src="/resource/img/person_icon.png" class="img_icon"></i>

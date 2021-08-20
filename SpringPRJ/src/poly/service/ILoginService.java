@@ -5,6 +5,6 @@ import poly.dto.ProjectsDTO;
 public interface ILoginService {
 
 
-	int Loginpage(ProjectsDTO mDTO) throws Exception;
+	ProjectsDTO Loginpage(ProjectsDTO mDTO) throws Exception;
 	
 }

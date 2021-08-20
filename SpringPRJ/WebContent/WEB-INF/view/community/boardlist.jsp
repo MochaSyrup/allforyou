@@ -7,12 +7,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<!-- 컨토롤러에서 실행된 로직들의 결과값을 가져온다 == rlist에 담아진 값들  -->
 <%
 	List<ProjectsDTO> rList = (List<ProjectsDTO>) request.getAttribute("rList");
 %>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>커뮤니티 게시판</title>
 <link rel="stylesheet"
@@ -50,17 +51,18 @@
 				</tr>
 			</thead>
 			<tbody>
+			<!-- rList안의 ProjectsDTO가 p에 순차적으로 대입되며 실행되는 for문 -->
 				<%
 					for (ProjectsDTO p : rList) {
 				%>
-				<tr>
 				
+				<tr onclick="location.href='/community/boardsee.do?number=<%=p.getBoard_seq()%>'">
 					<td><%=p.getBoard_seq()%></td>
 					<td><%=p.getBoard_title()%></td>
 					<td><%=p.getBoard_writer()%></td>
 					<td><%=p.getBoard_regdate()%></td>
 				</tr>
-
+				
 				<%
 					}
 				%>

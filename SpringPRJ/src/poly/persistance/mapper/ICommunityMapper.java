@@ -10,6 +10,9 @@ public interface ICommunityMapper {
 
 	
 	void insertCommunity(ProjectsDTO uDTO) throws Exception;
-	List<ProjectsDTO> getBoardList() throws Exception; 
+	List<ProjectsDTO> getBoardList() throws Exception;
+	ProjectsDTO getBoard(ProjectsDTO rDTO) throws Exception;
+	void updateCommunity(ProjectsDTO uDTO) throws Exception;
+	void deleteCommunity(ProjectsDTO uDTO) throws Exception;; 
 
 }
