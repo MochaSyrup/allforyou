@@ -94,7 +94,7 @@ public class communityController {
 		if (res == 0) {
 			result = "fail";
 		} else if (res == 1) {
-			result = "succes";
+			result = "/alert/boardwirteAlert";
 		} else {
 			result = "error";
 		}
@@ -175,7 +175,7 @@ public class communityController {
 			if (res == 0) {
 				result = "fail";
 			} else if (res == 1) {
-				result = "succes";
+				result = "/alert/boardupdateAlert";
 			} else {
 				result = "error";
 			}
@@ -201,7 +201,7 @@ public class communityController {
 					if (res == 0) {
 						result = "fail";
 					} else if (res == 1) {
-						result = "succes";
+						result = "/alert/boarddeleteAlert";
 					} else {
 						result = "error";
 					}

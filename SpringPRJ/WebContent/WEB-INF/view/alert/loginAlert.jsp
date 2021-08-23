@@ -2,16 +2,18 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<% 
+String user_name = (String)session.getAttribute("name"); 	
+%>
 <head>
 <meta charset="UTF-8">
-<title>Return</title>
+<title>AllForYou</title>
 </head>
 <body>
 
 <script>
-
-alert('로그인에 성공하였습니다.')
-document.location.href="/user/login.do"
+alert('<%=user_name%> 님 로그인에 성공하였습니다.')
+document.location.href="/index.do"
 </script>
 
 </body>

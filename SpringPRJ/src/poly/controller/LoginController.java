@@ -54,12 +54,11 @@ public class LoginController {
 			session.setAttribute("name", mDTO.getUser_name());
 			mDTO=null;
 			log.info("로그인 성공");
-			result = "/index";
+			result = "/alert/loginAlert";
 		}
 		
 		else {
-			result = "삐빅 - 오류입니다 ID/PW를 다시 확인해주세요 !";
-			result = "ERROR : 3064";
+			result = "/alert/loginfailAlert";
 		}
 
 		return result;

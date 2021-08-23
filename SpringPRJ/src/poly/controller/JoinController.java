@@ -73,7 +73,7 @@ public class JoinController {
 			if (res == 0) {
 				result = "fail";
 			} else if (res == 1) {
-				result = "succes";
+				result = "/alert/joinAlert";
 			} else {
 				result = "error";
 			}

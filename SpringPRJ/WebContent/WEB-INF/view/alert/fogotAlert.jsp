@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Return</title>
+<title>AllForYou</title>
 </head>
 <body>
 
 <script>
 
-alert('로그인에 성공하였습니다.')
+alert('메일 발송에 성공하였습니다.')
 document.location.href="/user/login.do"
 </script>
 

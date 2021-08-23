@@ -31,23 +31,18 @@ public class LogoutController {
 		String msg = "";
 		String url = "";
 		
-		int res = LoginService.logout(accessToken); //엑세스 토큰값 뭐로 받아올지 아직 모르겠다.
-		
-		if (res==1) {
-			log.info("res : " + res); // 1이면 성공
-
-			msg = "로그아웃 성공";
-			url = "/user/login.do";
-			session.invalidate();
-			
-			model.addAttribute("msg", msg);
-			model.addAttribute("url", url);
-		}else {
-			msg = "로그아웃 실패";
-			url = "/";
-		}
-		
-		log.info(this.getClass() + "user/logout end !!");
+		/*
+		 * int res = LoginService.logout(accessToken); //엑세스 토큰값 뭐로 받아올지 아직 모르겠다.
+		 * 
+		 * if (res==1) { log.info("res : " + res); // 1이면 성공
+		 * 
+		 * msg = "로그아웃 성공"; url = "/user/login.do"; session.invalidate();
+		 * 
+		 * model.addAttribute("msg", msg); model.addAttribute("url", url); }else { msg =
+		 * "로그아웃 실패"; url = "/"; }
+		 * 
+		 * log.info(this.getClass() + "user/logout end !!");
+		 */
 		
 		return "/loginAlert";
 	}

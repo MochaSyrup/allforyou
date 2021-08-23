@@ -27,12 +27,7 @@ public class ProjectsController {
 	@Resource(name = "MailService")
 	private IMailService mailService;
 	
-	@RequestMapping(value = "index")
-	public String Index() {
-		log.info(this.getClass());
 
-		return "/index";
-	}
 	
 	@RequestMapping(value = "Test")
 	public String Test(HttpServletRequest request, ModelMap model) throws Exception{
