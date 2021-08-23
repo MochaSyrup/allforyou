@@ -6,5 +6,6 @@
     	<!-- 사용할 DTO 등록  -->
 		<typeAlias type="poly.dto.ProjectsDTO" alias="ProjectsDTO"/>
 		<typeAlias type="poly.dto.MailDTO" alias="MailDTO"/>
+		<typeAlias type="poly.dto.KakaoDTO" alias="KakaoDTO"/>
     </typeAliases>
 </configuration>
