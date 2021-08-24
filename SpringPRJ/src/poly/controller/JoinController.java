@@ -11,8 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+
 
 import poly.dto.ProjectsDTO;
 import poly.service.IJoinService;
@@ -36,8 +37,7 @@ public class JoinController {
 	// ================================== 회원가입 로직
 	
 		@RequestMapping(value = "user/user/join.do")
-		@ResponseBody
-		public String insertinfo(HttpServletRequest request) throws Exception {
+		public String insertinfo(HttpServletRequest request, ModelMap model) throws Exception {
 			log.info("로그인 로직 실행");
 
 			String id = request.getParameter("id");
@@ -69,16 +69,15 @@ public class JoinController {
 
 			int res = JoinService.insertinfo(uDTO);
 
-			String result = "";
+			
 			if (res == 0) {
-				result = "fail";
+				log.info("회원가입 실패");
 			} else if (res == 1) {
-				result = "/alert/joinAlert";
-			} else {
-				result = "error";
-			}
-
-			return result;
+				log.info("회원가입 성공");
+			} 
+			
+			model.addAttribute("res", String.valueOf(res));
+			return "/alert/joinAlert";
 		}
 		
 		

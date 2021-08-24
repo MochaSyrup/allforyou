@@ -36,7 +36,7 @@
 		crossorigin="anonymous"></script>
 	<div class="container">
 		<h2>
-			<img src="/resource/img/logo.png" class="img_size2" alt="올포유 로고">
+			<a href="/index.do"><img src="/resource/img/logo.png" class="img_size2" alt="올포유 로고"></a>
 		</h2>
 		<h2 class="h2_seat">
 			<code class="h2_seat_color">커뮤니티 게시판</code>
@@ -70,9 +70,13 @@
 		</table>
 
 		<div class="div_button">
+			
 			<button type="button"
 				onclick="location.href='/community/boardwrite.do' "
 				class="btn button_FA6862 button_FA6862_seat">글쓰기</button>
+				<button type="button"
+				onclick="location.href='/index.do' "
+				class="btn button_FA6862 button_FA6862_seat" style="width:120px; margin-right: 10px;">이전 페이지</button>
 		</div>
 
 	</div>

@@ -39,7 +39,6 @@ public class PWController {
 	
 	// ================================== 비밀번호 로직
 		 @RequestMapping(value = "user/Search")
-		 
 		 public String Search(HttpServletRequest request, ModelMap model) throws Exception {
 		 log.info("비밀번호 찾기 시작");
 		 

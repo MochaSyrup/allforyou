@@ -6,7 +6,7 @@
 <!-- meta charset -->
 <meta charset="utf-8">
 <!-- site title -->
-<title>Phantom | Personal Resume Template</title>
+<title>AII FOR YOU</title>
 <!-- meta description -->
 <meta name="description" content="">
 <!-- mobile viwport meta -->
@@ -69,7 +69,7 @@
 							class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8 ">
 							<div class="page-title text-center login_imgbiv clearing_gap">
 								<h2>
-									<img src="/resource/img/logorm.png" class="login_logo">
+									<a href="/index.do"><img src="/resource/img/logorm.png" class="login_logo"></a>
 									<!--<h2>All <span class="primary">for you</span><span class="title-bg">Welcome</span>-->
 								</h2>
 								<p>
@@ -267,7 +267,7 @@
 				<nav class="page-nav clear">
 					<div class="container">
 						<div class="flex flex-middle space-between">
-							<span class="prev-page"><a href="testimonials.html"
+							<span class="prev-page"><a href="/user/login.do"
 								class="link">&larr; 이전</a></span> <span class="copyright hidden-xs">Copyright
 								&copy; 2021 ALL FOR YOU, All Rights Reserved.</span>
 						</div>

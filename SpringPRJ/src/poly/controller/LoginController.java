@@ -31,7 +31,7 @@ public class LoginController {
 	
 	//================================== 로그인 처리 로직
 	@RequestMapping(value = "Projects/index")
-	public String index(HttpServletRequest request, HttpSession session) throws Exception {
+	public String index(HttpServletRequest request, HttpSession session, ModelMap model) throws Exception {
 
 		String id = request.getParameter("id");
 		String password = request.getParameter("pwd");
@@ -46,21 +46,26 @@ public class LoginController {
 		log.info(mDTO.getUser_pwd());
 
 		mDTO = LoginService.Loginpage(mDTO);
-		log.info("이름"+ mDTO.getUser_name());
+		log.info("여기까지 오나 ??");
 		
-		String result = "";
+		log.info("여기까지 오나 ??122");
+		int res = 0;
+		
 		if(CmmUtil.nvl(mDTO.getUser_id()).equals(id)) {
+			log.info("이름"+ mDTO.getUser_name());
 			session.setAttribute("id", id);
 			session.setAttribute("name", mDTO.getUser_name());
 			mDTO=null;
 			log.info("로그인 성공");
-			result = "/alert/loginAlert";
+			res = 1;
 		}
 		
-		else {
-			result = "/alert/loginfailAlert";
+		else if (!CmmUtil.nvl(mDTO.getUser_id()).equals(id)){
+			log.info("로그인 실패");
+			res = 0;
 		}
-
-		return result;
+		
+		model.addAttribute("res", String.valueOf(res));
+		return "/alert/loginAlert";
 	}
 }

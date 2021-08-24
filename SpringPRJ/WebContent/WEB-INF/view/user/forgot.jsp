@@ -6,7 +6,7 @@
 <!-- meta charset -->
 <meta charset="utf-8">
 <!-- site title -->
-<title>Phantom | Personal Resume Template</title>
+<title>AII FOR YOU</title>
 <!-- meta description -->
 <meta name="description" content="">
 <!-- mobile viwport meta -->
@@ -143,7 +143,7 @@
 					<nav class="page-nav clear">
 						<div class="container">
 							<div class="flex flex-middle space-between">
-								<span class="prev-page"><a href="testimonials.html"
+								<span class="prev-page"><a href="/user/login.do"
 									class="link">&larr; 이전</a></span> <span class="copyright hidden-xs">Copyright
 									&copy; 2021 ALL FOR YOU, All Rights Reserved.</span>
 							</div>

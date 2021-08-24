@@ -33,8 +33,8 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
 	<div class="container">
-		<h2><img src="/resource/img/logo.png" class="img_size2"
-		alt="올포유 로고"></h2>
+		<h2><a href="/index.do"><img src="/resource/img/logo.png" class="img_size2"
+		alt="올포유 로고"></a></h2>
 		<h2 class="h2_seat">
 			<code class="h2_seat_color">커뮤니티 게시판</code>
 		</h2>
@@ -55,10 +55,13 @@
 		
 		<% if(user_id.equals(pDTO.getUser_id())) {%>
 		<button type="button" class="btn button_FA6862 button_FA6862_seat" onclick="location.href='/community/boardupdate.do?number=<%=pDTO.getBoard_seq()%>'">수정</button>
-		<button type="button" class="btn button_FA6862 button_FA6862_seat" onclick="location.href='/community/boarddelete.do?number=<%=pDTO.getBoard_seq()%>'">삭제</button>
+		<button type="button" class="btn button_FA6862 button_FA6862_seat" onclick="location.href='/community/boarddelete.do?number=<%=pDTO.getBoard_seq()%>'" style="margin-right:10px;">삭제</button>
 		<%} %>
-		
+		<button type="button"
+				onclick="location.href='/index.do' "
+				class="btn button_FA6862 button_FA6862_seat" style="width:120px; margin-right: 10px;">이전 페이지</button>
 		</div>
 </body>
 </html>
+
 

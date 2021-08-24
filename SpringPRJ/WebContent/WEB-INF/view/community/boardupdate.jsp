@@ -41,8 +41,8 @@ body {
 
 </head>
 <body>
-	<img src="/resource/img/logo.png" class="img_size"
-		alt="올포유 로고" />
+	<a href="/index.do"><img src="/resource/img/logo.png" class="img_size"
+		alt="올포유 로고" /></a>
 	<br>
 	<br>
 
@@ -87,7 +87,7 @@ body {
 			</form>
 
 			<div>
-
+				<button type="button" onclick="location.href='/community/boardlist.do'" class="btn btn-sm btn-primary button_color">이전 페이지</button>
 				<button type="button" class="btn btn-sm btn-primary button_color" id="btnSave">등록하기</button>
 				<button type="button" class="btn btn-sm btn-primary button_color" id="btnList">취소</button>
 

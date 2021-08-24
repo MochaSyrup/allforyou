@@ -2,6 +2,9 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<% 
+String user_name = (String)session.getAttribute("name"); 	
+%>
 <head>
 <meta charset="UTF-8">
 <title>AllForYou</title>
@@ -9,8 +12,7 @@
 <body>
 
 <script>
-
-alert('메일 발송에 성공하였습니다.')
+alert('로그아웃에 성공하였습니다.')
 document.location.href="/user/login.do"
 </script>
 

@@ -33,13 +33,13 @@ public class MypageController {
 	}
 	
 	@RequestMapping(value = "mypage/logout")
-	@ResponseBody
 	public String logout(HttpSession session) {
 		log.info("로그아웃 시작");
 		session.invalidate();
-		String log = "로그아웃 성공";
 		
-		return log;
+		String result = "/alert/logOutAlert";
+		
+		return result;
 	}
 		
 }

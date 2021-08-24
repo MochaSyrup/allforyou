@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import poly.service.IKakaoService;
 import poly.service.ILoginService;
 
+
+
 @Controller 
 public class KakaoController {
 
@@ -18,7 +20,7 @@ public class KakaoController {
 	@Resource(name="kakaoService") 
 	private IKakaoService kakaoService;
 	
-	@Resource(name="ILoginService") 
+	@Resource(name = "LoginService")
 	private ILoginService LoginService;
 	
 	// 카카오 정보 제공을 위한 매핑 카카오 로그인 or 카카오 정보 제공 화면 보일 것

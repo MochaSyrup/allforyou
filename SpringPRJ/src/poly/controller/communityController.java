@@ -1,4 +1,4 @@
-package poly.controller;
+ package poly.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,6 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import poly.dto.ProjectsDTO;
 import poly.service.ICommunityService;
@@ -67,8 +66,7 @@ public class communityController {
 	
 	// ========================================= 커뮤니티 게시판 게시글작성 로직
 	@RequestMapping(value = "community/boardwrite/logic")
-	@ResponseBody
-	public String insertCommunity(HttpServletRequest request) throws Exception {
+	public String insertCommunity(HttpServletRequest request, ModelMap model) throws Exception {
 		log.info("게시글작성 로직 실행");
 
 		String title = request.getParameter("BOARD_TITLE");
@@ -90,17 +88,15 @@ public class communityController {
 
 		int res = CommunityService.insertCommunity(aDTO);
 
-		String result = "";
 		if (res == 0) {
-			result = "fail";
+			log.info("게시글 작성 실패");
 		} else if (res == 1) {
-			result = "/alert/boardwirteAlert";
-		} else {
-			result = "error";
+			log.info("게시글 작성 성공");
 		}
-
-		return result;
-	}
+		model.addAttribute("res", String.valueOf(res));	
+		
+		return "/alert/boardwriteAlert";
+		}
 	
 	// ========================================= 커뮤니티 게시판 상세 페이지 출력
 	@RequestMapping(value="community/boardsee")
@@ -147,9 +143,8 @@ public class communityController {
 		
 		// ========================================= 게시글 수정 로직
 		@RequestMapping(value = "community/boardupdate/logic")
-		@ResponseBody
-		public String boardUpdateLogic(HttpServletRequest request) throws Exception {
-			log.info("게시글작성 로직 실행");
+		public String boardUpdateLogic(HttpServletRequest request, ModelMap model) throws Exception {
+			log.info("게시글수정 로직 실행");
 
 			String seq = CmmUtil.nvl(request.getParameter("number").toString());
 			String title = request.getParameter("BOARD_TITLE");
@@ -171,22 +166,20 @@ public class communityController {
 
 			int res = CommunityService.updateCommunity(aDTO);
 
-			String result = "";
+			
 			if (res == 0) {
-				result = "fail";
+				log.info("게시글 수정 실패");
 			} else if (res == 1) {
-				result = "/alert/boardupdateAlert";
-			} else {
-				result = "error";
+				log.info("게시글 수정 성공");
 			}
-
-			return result;
+			
+			model.addAttribute("res", String.valueOf(res));	
+			return "/alert/boardupdateAlert";
 		}
 		
 		// ========================================= 게시글 삭제 로직
 				@RequestMapping(value = "community/boarddelete")
-				@ResponseBody
-				public String boarddelete(HttpServletRequest request) throws Exception {
+				public String boarddelete(HttpServletRequest request, ModelMap model) throws Exception {
 					log.info("게시글삭제 로직 실행");
 
 					String seq = CmmUtil.nvl(request.getParameter("number").toString());
@@ -197,15 +190,14 @@ public class communityController {
 					
 					int res = CommunityService.deleteCommunity(aDTO);
 
-					String result = "";
+					
 					if (res == 0) {
-						result = "fail";
+						log.info("게시글 삭제 실패");
 					} else if (res == 1) {
-						result = "/alert/boarddeleteAlert";
-					} else {
-						result = "error";
+						log.info("게시글 삭제 성공");
 					}
-
-					return result;
+					
+					model.addAttribute("res", String.valueOf(res));	
+					return "/alert/boarddeleteAlert";
 				}
 }
