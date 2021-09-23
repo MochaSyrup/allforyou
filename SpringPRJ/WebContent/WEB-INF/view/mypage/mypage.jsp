@@ -88,7 +88,7 @@
 					<div class="row">
 
 						<div
-							class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2 login_box">
+							class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2 login_box mid">
 							<div class="section-title clear">
 								<h3>마이페이지</h3>
 								<span class="bar-dark"></span> <span class="bar-primary"></span>
@@ -107,7 +107,7 @@
 											<span class="input-icon" id="email"><i
 												class="tf-envelope2"></i></span> <input type="email"
 												class="form-control" name="id"
-												placeholder="사용하실 이메일을 입력해주세요">
+												placeholder="데이터값 들어갈 곳" disabled>
 										</div>
 									</div>
 									<!-- ./col- -->
@@ -126,7 +126,7 @@
 										<div class="input-field">
 											<span class="input-icon" id="subject"><i
 												class="tf-ion-person"></i></span> <input type="text"
-												class="form-control" name="name" placeholder="본인 이름을 입력해주세요">
+												class="form-control" name="name" placeholder="이름 데이터값" disabled>
 										</div>
 									</div>
 									<!-- ./col- -->
@@ -151,8 +151,8 @@
 											<div class="check_styl check_styl2">
 												<p>
 													<span>성별</span> <input type="radio" name="gender"
-														value="man" checked> 남자 <input type="radio"
-														name="gender" value="woman" class="input_style">
+														value="man" disabled> 남자 <input type="radio"
+														name="gender" value="woman" class="input_style" disabled>
 													여자
 												</p>
 
@@ -164,7 +164,7 @@
 											<div class="check_styl check_styl2">
 												<p>
 													<span>생년월일</span> <select name="year"
-														class="check_styl2_child">
+														class="check_styl2_child" disabled>
 														<option value="년">년</option>
 														<option value="1985">1985</option>
 														<option value="1986">1986</option>
@@ -185,7 +185,7 @@
 														<option value="2001">2001</option>
 														<option value="2002">2002</option>
 														<option value="2003">2003</option>
-													</select> <select name="month">
+													</select> <select name="month" disabled>
 														<option value="월">월</option>
 														<option value="01">1</option>
 														<option value="02">2</option>
@@ -200,7 +200,7 @@
 														<option value="11">11</option>
 														<option value="12">12</option>
 
-													</select> <select name="date">
+													</select> <select name="date" disabled>
 														<option value="일">일</option>
 														<option value="01">1</option>
 														<option value="02">2</option>

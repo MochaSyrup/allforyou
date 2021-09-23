@@ -84,7 +84,7 @@
 					<div class="row">
 
 						<div
-							class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2 login_box">
+							class="col-xs-12 col-sm-7 col-md-7 col-md-offset-1 col-lg-offset-2 login_box mid">
 							<div class="section-title clear">
 								<h3>로그인</h3>
 								<span class="bar-dark"></span> <span class="bar-primary"></span>
