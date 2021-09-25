@@ -130,7 +130,7 @@
                                         <div></div>
                                         <div></div>
                                     </div>
-                                    <a href="services.do" class="hex-content">
+                                    <a href="/translate/upload.do" class="hex-content">
                                         <span class="hex-content-inner">
                                             <span class="icon">
                                                 <i class=""><img src="/resource/img/allergy_icon.png" class="img_icon"></i>
