@@ -80,7 +80,7 @@ $(document).ready(function(e) {
 
 
 				<div class="grid">
-					<div class="element-item transition metal"
+					<div class="element-item transition metal a1"
 						data-category="transition">
 						<a href="#"><img src="/resource/img/food/bibimbap.jpg">
 						</a>
@@ -91,7 +91,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item metalloid a2 a3" data-category="metalloid">
+					<div class="element-item metalloid a1 a3" data-category="metalloid">
 						<a href="#"><img src="/resource/img/food/bulgogi.jpg"></a>
 						<div class="a1a2a3">
 							<h3>불고기</h3>
@@ -100,7 +100,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item post-transition metal "
+					<div class="element-item post-transition metal a2"
 						data-category="post-transition">
 						<a href="#"><img src="/resource/img/food/cabbagekimchi.jpg"></a>
 						<div class="a2">
@@ -110,7 +110,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item post-transition metal "
+					<div class="element-item post-transition metal a1 a3"
 						data-category="post-transition">
 						<a href="#"><img src="/resource/img/food/chicken.jpg"></a>
 						<div class="c1 c3">
@@ -118,7 +118,7 @@ $(document).ready(function(e) {
 							<p>닭에 튀김가루를 입히고 튀겨 만든 요리</p>
 						</div>
 					</div>
-					<div class="element-item transition metal "
+					<div class="element-item transition metal a2"
 						data-category="transition">
 						<a href="#"><img src="/resource/img/food/cucumber.jpg"></a>
 						<div class="a2">
@@ -129,7 +129,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item alkali metal " data-category="alkali">
+					<div class="element-item alkali metal a2" data-category="alkali">
 						<a href="#"><img src="/resource/img/food/fern.jpg"></a>
 						<div class="a2">
 							<h3>고사리나물</h3>
@@ -138,7 +138,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item alkali metal " data-category="alkali">
+					<div class="element-item alkali metal a1" data-category="alkali">
 						<a href="#"><img src="/resource/img/food/gimbap.jpg"></a>
 						<div class="a1">
 							<h3>김밥</h3>
@@ -147,7 +147,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item transition metal "
+					<div class="element-item transition metal a2"
 						data-category="transition">
 						<a href="#"><img src="/resource/img/food/greenonion.jpg"></a>
 						<div class="a2">
@@ -155,7 +155,7 @@ $(document).ready(function(e) {
 							<p>파로 담근 김치</p>
 						</div>
 					</div>
-					<div class="element-item alkaline-earth metal "
+					<div class="element-item alkaline-earth metal a1"
 						data-category="alkaline-earth">
 						<a href="#"><img src="/resource/img/food/greenPancake.jpg"></a>
 						<div class="a1">
@@ -165,7 +165,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item transition metal "
+					<div class="element-item transition metal a1"
 						data-category="transition">
 						<a href="#"><img src="/resource/img/food/kimchipancake.jpg"></a>
 						<div class="a1">
@@ -175,7 +175,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item post-transition metal "
+					<div class="element-item post-transition metal a1"
 						data-category="post-transition">
 						<a href="#"><img src="/resource/img/food/kimchirice.jpg"></a>
 						<div class="a1">
@@ -185,14 +185,14 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item metalloid " data-category="metalloid">
+					<div class="element-item metalloid a2" data-category="metalloid">
 						<a href="#"><img src="/resource/img/food/kimchistew.jpg"></a>
 						<div class="a1">
 							<h3>김치찌개</h3>
 							<p>치를 넣고 끓인 찌개.</p>
 						</div>
 					</div>
-					<div class="element-item transition metal "
+					<div class="element-item transition metal a1"
 						data-category="transition">
 						<a href="#"><img src="/resource/img/food/noodles.jpg"></a>
 						<div class="a1">
@@ -203,7 +203,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item lanthanoid metal inner-transition a1"
+					<div class="element-item lanthanoid metal inner-transition a2"
 						data-category="lanthanoid">
 						<a href="#"><img src="/resource/img/food/pumpkinstirfried.jpg"></a>
 						<div class="a2">
@@ -213,7 +213,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item noble-gas nonmetal "
+					<div class="element-item noble-gas nonmetal a1 a3"
 						data-category="noble-gas">
 						<a href="#"><img src="/resource/img/food/ribsteamed.jpg"></a>
 						<div class="a1 a2 a3">
@@ -221,7 +221,7 @@ $(document).ready(function(e) {
 							<p>소나 돼지 따위의 갈비를 양념과 간을 하여 국물이 바특하게 흠씬 삶은 음식.</p>
 						</div>
 					</div>
-					<div class="element-item diatomic nonmetal "
+					<div class="element-item diatomic nonmetal a2"
 						data-category="diatomic">
 						<a href="#"><img src="/resource/img/food/radishkimchi.jpg"></a>
 						<div class="a2">
@@ -231,7 +231,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition "
+					<div class="element-item actinoid metal inner-transition a1 a3"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/samgyetang.jpg"></a>
 						<div class="a1 a3">
@@ -241,7 +241,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition "
+					<div class="element-item actinoid metal inner-transition a1 a2"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/RiceSoup.jpg"></a>
 						<div class="a1">
@@ -249,7 +249,7 @@ $(document).ready(function(e) {
 							<p>떡국에 만두를 넣어 끓인 국물 요리.</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition a1"
+					<div class="element-item actinoid metal inner-transition a1 a3"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/seasoningchicken.jpg"></a>
 						<div class="a1 a3">
@@ -259,7 +259,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition "
+					<div class="element-item actinoid metal inner-transition a2"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/SeaweedSoup.jpg"></a>
 						<div class="a1">
@@ -269,7 +269,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition a2"
+					<div class="element-item actinoid metal inner-transition a1"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/songpyeon.jpg"></a>
 						<div class="a2">
@@ -279,7 +279,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition a2"
+					<div class="element-item actinoid metal inner-transition a1 a3"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/SpicyChicken.jpg"></a>
 						<div class="a1 a2 a3">
@@ -299,7 +299,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition a2"
+					<div class="element-item actinoid metal inner-transition a1 a3"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/steamedchicken.jpg"></a>
 						<div class="a1 a2 a3">
@@ -309,7 +309,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition a2"
+					<div class="element-item actinoid metal inner-transition a1 a3"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/stirfriedmeat.jpg"></a>
 						<div class="a1 a2 a3">
@@ -319,7 +319,7 @@ $(document).ready(function(e) {
 							</p>
 						</div>
 					</div>
-					<div class="element-item actinoid metal inner-transition a2"
+					<div class="element-item actinoid metal inner-transition a1 a3"
 						data-category="actinoid">
 						<a href="#"><img src="/resource/img/food/tteokgalbi.jpg"></a>
 						<div class="a1 a2 a3">
