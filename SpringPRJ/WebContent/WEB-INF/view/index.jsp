@@ -222,7 +222,7 @@
                                         <div></div>
                                         <div></div>
                                     </div>
-                                    <a href="contact.do" class="hex-content">
+                                    <a href="/contact/contact.do" class="hex-content">
                                         <span class="hex-content-inner">
                                             <span class="icon">
                                                 <i class=""><img src="/resource/img/service_icon.png" class="img_icon"></i>
