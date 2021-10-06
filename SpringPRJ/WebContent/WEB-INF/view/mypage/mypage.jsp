@@ -77,8 +77,8 @@
 									<!--<h2>All <span class="primary">for you</span><span class="title-bg">Welcome</span>-->
 								</h2>
 								<p>
-									올포유 서비스 이용을 위한 회원가입을 해주세요.<br> 당신을 위한, 안전한 먹거리를 위해 ALL FOR
-									YOU
+									당신을 위한, 안전한 먹거리를 위해 ALL FOR YOU
+									
 								</p>
 							</div>
 						</div>
@@ -250,12 +250,20 @@
 									<div class="col-xs-12 col-sm-12 ">
 										<div class="input-field div_margin2">
 											<span class="btn-border email_length">
+												<button type="button" class="btn btn-sm btn-primary button_color button_color email_length" id="btnSave" onclick="location.href='/mypage/logout.do'">로그아웃</button>
+											</span>
+											<span class="btn-border email_length">
 												<button type="submit"
 													class="btn btn-primary btn-custom-border text-uppercase email_length">수정하기</button>
-													
 											</span>
+											<span class="btn-border email_length">
+												<button type="submit"
+													id="btnSave" onclick="location.href='/mypage.do'"
+													class="btn btn-primary btn-custom-border text-uppercase email_length">비밀번호 변경</button>
+											</span>
+											
 										</div>
-										<button type="button" class="btn btn-sm btn-primary button_color" id="btnSave" onclick="location.href='/mypage/logout.do'">로그아웃</button>
+										
 										<!--<div class="msg-success">Your Message was sent successfully</div> 
 										<div class="msg-failed">뭔가 잘못되었어요, 다시 시도해 보세요</div>-->
 									</div>
