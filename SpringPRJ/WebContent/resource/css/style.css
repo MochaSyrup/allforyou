@@ -126,10 +126,10 @@ span{color:#ddd;}
 }
 /*버튼색*/
 .button_color {
-	background-color: #1e2530 !important;
+	background-color: #1e2530;
 }
 .button_color:hover {
-	background-color: #FA6862 !important;
+	background-color: #FA6862;
 }
 .button_FA6862 {
 	background-color: #FA6862;

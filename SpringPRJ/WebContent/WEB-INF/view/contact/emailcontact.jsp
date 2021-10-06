@@ -149,7 +149,7 @@
 				<nav class="page-nav clear">
 					<div class="container">
 						<div class="flex flex-middle space-between">
-							<span class="prev-page"><a href="/contact/contact.do"
+							<span class="prev-page"><a href="/contact/contact.do.do"
 								class="link">&larr; 이전</a></span>
 								<span class="copyright hidden-xs">Copyright
 								&copy; 2021 ALL FOR YOU, All Rights Reserved.</span>
