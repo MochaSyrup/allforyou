@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <% 
-String user_name = (String)session.getAttribute("name"); 
+String user_name = (String)session.getAttribute("id"); 
 String jspRes = CmmUtil.nvl((String)request.getAttribute("res"), "0");
 %>
 <head>
@@ -25,7 +25,7 @@ if (jspRes.equals("1")){
 } else{
 %>
 	<script>
-	alert('로그인에 실패하였습니다. ID,PW를 다시 확인해주세요.')
+	alert('로그인 실패. ID와 PW를 다시 확인해주세요.')
 	document.location.href="/user/login.do"
 	</script>
 <%

@@ -23,14 +23,25 @@
 	    <property name="testConnectionOnCheckin" value="true" />
 	    <property name="testConnectionOnCheckout" value="false" /> -->
 	     
-	  <bean id="dataSource"
-      class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-      lazy-init="false">
-      <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-      <property name="url" value="jdbc:mysql://localhost:3306/allforyou?useSSL=false&amp;serverTimezone=Asia/Seoul" />
-      <property name="username" value="root" />
-      <property name="password" value="1234" />
-   </bean>
+	    <!--  MySQL 접속을 위한 쿼리문 --> 
+	     <!-- <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+          lazy-init="false">
+           <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+           <property name="url" value="jdbc:mysql://localhost:3306/allforyou?useSSL=false&amp;serverTimezone=Asia/Seoul" />
+           <property name="username" value="root" />
+           <property name="password" value="1234" />
+         </bean> -->
+   		
+        <!--  AWS MySQL 접속을 위한 쿼리문 --> 
+        <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+          lazy-init="false">
+           <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+           <property name="url" value="jdbc:mysql://allforyou.cbabesbx22gz.ap-northeast-2.rds.amazonaws.com:3306/allforyou?useSSL=false&amp;serverTimezone=Asia/Seoul" />
+           <property name="username" value="admin" />
+           <property name="password" value="12341234" />
+         </bean>
 	    
 
     
